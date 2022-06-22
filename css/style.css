@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 24px;
+}
+
+section{
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(47, 142, 112, .3);
+}
+
+h2{
+    color: blue;
+}
+.photo {
+    width: 200px;
+    height: 261px;
+    background-image: url(../images/Me.jpg);
+    /* background-repeat: no-repeat;
+    background-position: bottom right; */
+}  
+
+.unordered {
+    list-style: none;
+}
+
+.about{
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    border-bottom: 3px solid rgba(47, 142, 112, .3);
+}
+
+.first-row{
+    margin-bottom: 10px;
+    border-bottom: 3px solid rgba(47, 142, 112, .3);
+}
+
+th {
+    padding: 5px;
+    border: 3px solid black;
+}
+
+td {
+    padding: 5px;
+    border: 3px solid black;
+}
+
+table {
+    /* Свойством border задаем границы таблице. */
+    border: 3px solid black;
+    /*
+        Свойство border-collapse позволяет задать отображение границы вокруг ячеек таблицы.
+        Имеет несколько значений:
+            - collapse - рамки ячеек сливаются в одну, а промежутки между рамками убираются.
+            - separate - рамки ячеек располагаются отдельно.
+    */
+    border-collapse: separate;
+    /*
+        Свойство border-spacing позволяет задать отступы между ячейками и рамкой таблицы. 
+        Если задано одно значение - отступы со всех сторон одинаковые, если два значения, то первое задает расстояние по горизонтали, второе - по вертикали.
+    */
+    border-spacing: 5px;
+    /*
+        Свойство empty-cells позволяет задать параметры отображения пустых ячеек.
+        Имеет два значения:
+            - show - рамка и фон отображаются.
+            - hide - скрывает ячейку, задавая ей свойство display: none.
+    */
+    empty-cells: hide;
+}
+
+.first-column{
+    width: 25%;
+}
+
+.second-column{
+    width: 75%;
+}
